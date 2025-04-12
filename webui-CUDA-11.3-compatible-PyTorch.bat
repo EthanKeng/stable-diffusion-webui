@@ -14,7 +14,7 @@ set TORCH_COMMAND=pip install torch==2.1.2+cu118 torchvision==0.16.2+cu118 torch
 :: --lowvram enables optimizations for low VRAM GPUs (like 4GB).
 :: --opt-sdp-attention uses a more memory-efficient attention mechanism available in PyTorch 2.x.
 :: REMOVED --xformers as it was causing errors during generation.
-set COMMANDLINE_ARGS=--lowvram --opt-sdp-attention
+set COMMANDLINE_ARGS=--lowvram --opt-sdp-attention --listen
 
 :: Set the path to git executable if needed (usually not necessary if git is in your system PATH)
 :: Example: set GIT=C:\Program Files\Git\bin\git.exe
